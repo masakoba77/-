@@ -46,6 +46,7 @@
       <a href="#inside">防衛費の中身</a>
       <a href="#funding">財源はどこから</a>
       <a href="#issues">論点</a>
+      <a href="#board">掲示板</a>
       <a href="#sources">データソース</a>
     </nav>
   </header>
@@ -166,6 +167,18 @@
     </ul>
   </section>
 
+  <section id="board">
+    <h2>掲示板</h2>
+    <p class="section-note">
+      このサイトの内容や防衛費のあり方について、ご意見・ご感想をお寄せください（Disqusによる外部埋め込みです。GitHubアカウントは不要、匿名でも投稿できます）。
+    </p>
+    <div id="disqus_thread"></div>
+    <p id="disqus-setup-notice" class="callout" hidden>
+      掲示板を有効にするには、<code>assets/disqus.js</code> の <code>DISQUS_SHORTNAME</code> に
+      <a href="https://disqus.com/admin/create/" target="_blank" rel="noopener">disqus.com</a>で発行したshortnameを設定してください。
+    </p>
+  </section>
+
   <footer id="sources">
     <strong style="color:var(--text-secondary)">データソース</strong>
     <ul class="sources">
@@ -185,6 +198,7 @@
 
 <script src="assets/data.js"></script>
 <script src="assets/charts.js"></script>
+<script src="assets/disqus.js"></script>
 <script>
 (function () {
   const cards = document.querySelectorAll(".chart-card");
