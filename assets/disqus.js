@@ -1,6 +1,6 @@
 // Disqus埋め込み（掲示板）。
 // https://disqus.com/admin/create/ でサイトを作成し、発行されたshortnameを下に設定してください。
-const DISQUS_SHORTNAME = "YOUR-DISQUS-SHORTNAME";
+const DISQUS_SHORTNAME = "boei";
 
 (function () {
   if (!DISQUS_SHORTNAME || DISQUS_SHORTNAME === "YOUR-DISQUS-SHORTNAME") {
