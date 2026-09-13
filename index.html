@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>日本の防衛費と予算</title>
-<meta name="description" content="日本の防衛関係費の推移と、国の予算全体に与える影響をデータで解説するサイト。">
+<title>日本の社会保障を読む</title>
+<meta name="description" content="日本の社会保障給付費の推移と、少子高齢化が財政に与える影響をデータで解説するサイト。">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -12,38 +12,39 @@
 <div class="wrap">
   <header class="hero">
     <div class="eyebrow">日本の財政を読む</div>
-    <h1>防衛費は、国の予算をどう変えているのか</h1>
+    <h1>社会保障は、なぜ膨らみ続けるのか</h1>
     <p class="lead">
-      2022年末の安保三文書決定以降、日本の防衛関係費は5年連続で大幅に増加しています。
-      予算の規模・内訳・財源、そして他の政策分野とのバランスを、公表データに基づいて整理しました。
+      年金・医療・介護・福祉からなる日本の社会保障給付費は、この50年でおよそ38倍に拡大し、
+      国の一般会計歳出の3割超を占めるまでになりました。急速な少子高齢化を背景に、
+      制度の中身と財源、そして持続可能性をめぐる論点を公表データに基づいて整理しました。
     </p>
-    <div class="updated">データ基準：令和8年度（2026年度）当初予算　最終更新：2026年9月</div>
+    <div class="updated">データ基準：2022年度実績・令和8年度（2026年度）当初予算　最終更新：2026年9月</div>
 
     <div class="stat-grid">
       <div class="stat-tile">
-        <div class="label">令和8年度 防衛関係費</div>
-        <div class="value">9兆353億円</div>
-        <div class="delta">前年度比 +3.8%</div>
+        <div class="label">社会保障給付費（2022年度実績）</div>
+        <div class="value">134.3兆円</div>
+        <div class="delta">1970年度比 約38倍</div>
+      </div>
+      <div class="stat-tile">
+        <div class="label">対国民所得比</div>
+        <div class="value">約31.0%</div>
       </div>
       <div class="stat-tile">
         <div class="label">一般会計歳出に占める割合</div>
-        <div class="value">約7.3%</div>
+        <div class="value">約31.9%</div>
       </div>
       <div class="stat-tile">
-        <div class="label">対GDP比（広義集計）</div>
-        <div class="value">約1.9%</div>
-      </div>
-      <div class="stat-tile">
-        <div class="label">R4→R8の伸び率</div>
-        <div class="value">+72%</div>
+        <div class="label">高齢化率（65歳以上人口割合）</div>
+        <div class="value">約29.1%</div>
       </div>
     </div>
 
     <nav class="toc">
-      <a href="#trend">防衛費の推移</a>
-      <a href="#gdp">GDP比2%目標</a>
-      <a href="#breakdown">国の予算に占める位置づけ</a>
-      <a href="#inside">防衛費の中身</a>
+      <a href="#trend">給付費の推移</a>
+      <a href="#inside">給付費の内訳</a>
+      <a href="#position">国の予算に占める位置づけ</a>
+      <a href="#aging">少子高齢化の進行</a>
       <a href="#funding">財源はどこから</a>
       <a href="#issues">論点</a>
       <a href="#board">掲示板</a>
@@ -52,83 +53,37 @@
   </header>
 
   <section id="trend">
-    <h2>防衛関係費の推移</h2>
+    <h2>社会保障給付費の推移</h2>
     <p class="section-note">
-      2022年12月の「安保三文書」で防衛力の抜本的強化とGDP比2%への増額方針が決定されて以降、
-      防衛力整備計画の対象経費は5年間でおよそ1.7倍に拡大しました。増加率は年々緩やかになっています。
+      社会保障給付費（年金・医療・福祉その他の合計）は1970年度の3.5兆円から一貫して増加を続け、
+      2022年度には134.3兆円に達しました。特に高齢化が加速した2000年代以降、増加ペースは高止まりしています。
     </p>
     <div class="chart-card">
-      <div class="chart-title">防衛力整備計画対象経費の推移（当初予算ベース）</div>
-      <div class="chart-sub">単位：億円</div>
-      <svg role="img" aria-label="防衛力整備計画対象経費の推移"></svg>
+      <div class="chart-title">社会保障給付費の推移（実績ベース）</div>
+      <div class="chart-sub">単位：兆円</div>
+      <svg role="img" aria-label="社会保障給付費の推移"></svg>
       <button class="table-toggle" type="button">表で見る</button>
       <table class="data-table">
-        <thead><tr><th>年度</th><th>金額（億円）</th><th>前年度比</th></tr></thead>
+        <thead><tr><th>年度</th><th>金額（億円）</th><th>前回比</th></tr></thead>
         <tbody id="trend-table"></tbody>
       </table>
     </div>
     <div class="callout">
-      この拡大が始まる前、防衛関係費はおよそ10年にわたり<strong>5兆円前後</strong>で推移していました
-      （2013年度当初予算は約4兆7,538億円）。令和8年度予算はその水準からおよそ倍増しています。
-    </div>
-  </section>
-
-  <section id="gdp">
-    <h2>対GDP比2%目標への道のり</h2>
-    <p class="section-note">
-      政府は2027年度までに、防衛力整備計画対象経費に研究開発費・海上保安庁予算なども加えた
-      「防衛関連予算」を対GDP比2%まで引き上げる方針を掲げています。令和8年度はこの目標水準に前倒しで近づいたと報じられています。
-      年度によって集計範囲（NATO基準に準拠した広義の集計か、防衛省予算のみか）が異なるため、下図は目安として参照してください。
-    </p>
-    <div class="chart-card">
-      <div class="chart-title">防衛関連予算の対GDP比</div>
-      <div class="chart-sub">単位：%（広義集計を含む概数）</div>
-      <svg role="img" aria-label="防衛関連予算の対GDP比の推移"></svg>
-      <button class="table-toggle" type="button">表で見る</button>
-      <table class="data-table">
-        <thead><tr><th>年度</th><th>対GDP比</th><th>備考</th></tr></thead>
-        <tbody id="gdp-table"></tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="breakdown">
-    <h2>国の予算全体における防衛費の位置づけ</h2>
-    <p class="section-note">
-      令和8年度の一般会計歳出総額は122兆3,000億円。防衛関係費はその一部で、
-      社会保障・国債費・地方交付税交付金等に次ぐ規模ですが、全体に占める割合は約7.3%にとどまります。
-    </p>
-    <div class="chart-card">
-      <div class="chart-title">令和8年度 一般会計歳出　主要経費別内訳</div>
-      <div class="chart-sub">単位：億円（全体：122兆3,000億円）</div>
-      <svg role="img" aria-label="令和8年度一般会計歳出の主要経費別内訳"></svg>
-      <div class="legend">
-        <span class="item"><span class="swatch" style="background:var(--series-1)"></span>防衛関係費</span>
-        <span class="item"><span class="swatch" style="background:var(--series-neutral)"></span>その他の経費</span>
-      </div>
-      <button class="table-toggle" type="button">表で見る</button>
-      <table class="data-table">
-        <thead><tr><th>経費区分</th><th>金額（億円）</th><th>構成比</th></tr></thead>
-        <tbody id="breakdown-table"></tbody>
-      </table>
-    </div>
-    <div class="callout">
-      財務省の主要経費別分類では防衛関係費は<strong>8兆9,843億円（7.3%）</strong>ですが、
-      防衛省が公表する防衛関係費の総額は<strong>9兆353億円</strong>です。所管区分の違いにより
-      500億円程度の差が生じています。
+      2020年度はコロナ禍による給付の上乗せとGDPの落ち込みが重なり、対国民所得比が一時的に上昇しました。
+      増加額の絶対水準は年々大きくなっている一方、伸び率そのものは経済成長や制度改正により変動しています。
     </div>
   </section>
 
   <section id="inside">
-    <h2>防衛費の中身：何に使われているか</h2>
+    <h2>給付費の内訳：何に使われているか</h2>
     <p class="section-note">
-      防衛関係費9兆353億円の内訳は、装備品の調達・維持や施設整備などの「物件費」が7割超を占め、
-      隊員の給与や食事などの「人件費・糧食費」が3割弱となっています。
+      134.3兆円の内訳は、年金が最大の4割超を占め、医療が3割、介護・子育て・生活保護・雇用対策などの
+      「福祉その他」が3割弱を占めています。高齢化に伴い、近年は医療・介護費の伸びが年金の伸びを上回る傾向にあります。
     </p>
     <div class="chart-card">
-      <div class="chart-title">令和8年度 防衛関係費の内訳</div>
-      <div class="chart-sub">単位：億円（総額：9兆353億円）</div>
-      <svg role="img" aria-label="令和8年度防衛関係費の内訳"></svg>
+      <div class="chart-title">社会保障給付費の内訳（2022年度実績）</div>
+      <div class="chart-sub">単位：億円（総額：134.3兆円）</div>
+      <svg role="img" aria-label="社会保障給付費の内訳"></svg>
       <button class="table-toggle" type="button">表で見る</button>
       <table class="data-table">
         <thead><tr><th>区分</th><th>金額（億円）</th><th>構成比</th></tr></thead>
@@ -137,40 +92,91 @@
     </div>
   </section>
 
-  <section id="funding" class="prose">
-    <h2>増額分の財源はどこから来るのか</h2>
+  <section id="position">
+    <h2>国の予算全体における社会保障費の位置づけ</h2>
     <p class="section-note">
-      2023年6月に成立した「防衛財源確保法」に基づき、2027年度までに必要となる追加財源（年間約4兆円規模）は、
-      主に次の4つの柱でまかなう計画とされています。
+      令和8年度の一般会計歳出総額は122兆3,000億円。社会保障関係費はその31.9%を占め、
+      国債費・地方交付税交付金等・防衛関係費などを上回る、歳出項目の中で最大の割合です。
+    </p>
+    <div class="chart-card">
+      <div class="chart-title">令和8年度 一般会計歳出　主要経費別内訳</div>
+      <div class="chart-sub">単位：億円（全体：122兆3,000億円）</div>
+      <svg role="img" aria-label="令和8年度一般会計歳出の主要経費別内訳"></svg>
+      <div class="legend">
+        <span class="item"><span class="swatch" style="background:var(--series-1)"></span>社会保障関係費</span>
+        <span class="item"><span class="swatch" style="background:var(--series-neutral)"></span>その他の経費</span>
+      </div>
+      <button class="table-toggle" type="button">表で見る</button>
+      <table class="data-table">
+        <thead><tr><th>経費区分</th><th>金額（億円）</th><th>構成比</th></tr></thead>
+        <tbody id="position-table"></tbody>
+      </table>
+    </div>
+    <div class="callout">
+      ここでの「社会保障関係費」（39兆556億円）は国の一般会計から支出される公费負担分のみを指し、
+      保険料収入を含む「社会保障給付費」（134.3兆円）とは範囲が異なります。給付費全体のうち、
+      国の一般会計が直接負担しているのは3割弱にとどまります。
+    </div>
+  </section>
+
+  <section id="aging">
+    <h2>少子高齢化の進行</h2>
+    <p class="section-note">
+      社会保障給付費が拡大し続けている最大の要因は、急速な高齢化です。65歳以上人口が総人口に占める割合（高齢化率）は
+      1970年の7.1%から2023年には29.1%まで上昇し、世界でも最高水準にあります。
+    </p>
+    <div class="chart-card">
+      <div class="chart-title">高齢化率の推移</div>
+      <div class="chart-sub">単位：%（65歳以上人口 / 総人口）</div>
+      <svg role="img" aria-label="高齢化率の推移"></svg>
+      <button class="table-toggle" type="button">表で見る</button>
+      <table class="data-table">
+        <thead><tr><th>年</th><th>高齢化率</th><th>備考</th></tr></thead>
+        <tbody id="aging-table"></tbody>
+      </table>
+    </div>
+    <div class="callout">
+      高齢者を支える現役世代（15〜64歳）の人数は、1970年の「約9.8人で1人」から2023年には
+      「約2.0人で1人」まで縮小しました。国立社会保障・人口問題研究所の推計では、2040年頃には
+      「約1.5人で1人」を支える構図になるとされ、現役世代1人あたりの負担は今後も重くなる見通しです。
+    </div>
+  </section>
+
+  <section id="funding" class="prose">
+    <h2>社会保障の財源はどこから来るのか</h2>
+    <p class="section-note">
+      社会保障給付費は、主に「保険料」と「公费（税金）」の2つを財源としており、
+      高齢化による給付の増加分を、現役世代の保険料と国・地方の税収でどう分担するかが制度運営の核心です。
     </p>
     <div class="pillars">
-      <div class="pillar"><div class="n">1</div>歳出改革<br>既存の歳出を見直して財源を捻出</div>
-      <div class="pillar"><div class="n">2</div>決算剰余金の活用<br>予算の使い残しを翌年度以降に充当</div>
-      <div class="pillar"><div class="n">3</div>防衛力強化資金<br>国有財産の売却収入等を防衛費に繰り入れ</div>
-      <div class="pillar"><div class="n">4</div>税制措置<br>法人税・所得税・たばこ税の増税（実施時期は度々見直し）</div>
+      <div class="pillar"><div class="n">1</div>社会保険料<br>労使折半で負担する年金・医療・介護保険料など。財源の中心だが、少子化で現役世代の負担が重くなりやすい</div>
+      <div class="pillar"><div class="n">2</div>公费負担（国）<br>国の一般会計から投入される税財源。令和8年度は39兆556億円で、歳出全体の最大項目</div>
+      <div class="pillar"><div class="n">3</div>公费負担（地方）<br>都道府県・市町村が負担する分。国民健康保険や介護保険の一部などに充てられる</div>
+      <div class="pillar"><div class="n">4</div>積立金の運用収益等<br>年金積立金（GPIF運用）の収益や資産収入。給付を下支えするが、市場変動の影響を受ける</div>
     </div>
     <p>
-      このうち税制措置（増税）の実施時期は、経済情勢を踏まえて複数回にわたり先送りされており、
-      財源の一部を国債発行に頼らざるを得ない構造になっている点が国会でもたびたび議論の対象となっています。
+      国の公费負担分は税収だけでは賄いきれず、国債発行に頼っている部分があります。
+      その結果、現在の給付の一部が将来世代の負担（国債の償還）に先送りされている構造になっている点が、
+      財政健全化の議論でたびたび指摘されています。
     </p>
   </section>
 
   <section id="issues" class="prose">
-    <h2>予算への影響をめぐる主な論点</h2>
+    <h2>社会保障をめぐる主な論点</h2>
     <p class="section-note">立場によって評価が分かれるポイントを、事実関係を中心に整理しました。</p>
     <ul>
-      <li><strong>財政健全化との両立</strong>：日本の普通国債残高は1,000兆円を超える水準にあり、防衛費の急増が新規国債発行の増加要因の一つになっているとの指摘があります。</li>
-      <li><strong>他の政策分野とのバランス</strong>：社会保障費（31.9%）や地方交付税（17.1%）に比べればまだ小さい割合ですが、伸び率でみると近年の歳出項目の中で最も高い部類に入り、公共事業・教育・子育て支援など他分野の予算配分との優先順位づけが論点になっています。</li>
-      <li><strong>財源の持続可能性</strong>：増税の実施時期が繰り返し延期されており、当面は決算剰余金や国債など一時的・不安定な財源への依存が続くとの見方があります。</li>
-      <li><strong>GDP比2%という目標水準の妥当性</strong>：NATO加盟国の目安である「GDP比2%」を採用したことについて、日本の安全保障環境を踏まえて妥当とする意見と、金額ありきの目標設定だとする批判の両方があります。</li>
-      <li><strong>集計範囲の透明性</strong>：GDP比の算出に海上保安庁予算や研究開発費など防衛省予算以外の経費を含めていることについて、実態を分かりやすくしているという評価と、数字を大きく見せているという批判の双方が示されています。</li>
+      <li><strong>現役世代の負担増</strong>：少子化で保険料を支える現役世代が減る一方、給付を受ける高齢者は増え続けており、現役世代1人あたりの保険料・税負担は年々重くなっています。</li>
+      <li><strong>医療・介護費の伸び</strong>：高齢化に伴い、これまで給付の中心だった年金に加え、医療・介護給付の伸びが目立つようになっており、地域医療・介護人材の確保も課題です。</li>
+      <li><strong>年金の実質価値</strong>：「マクロ経済スライド」により、少子高齢化の進行に応じて年金の伸びを物価・賃金上昇より抑える仕組みが導入されていますが、現役世代の受給時の給付水準低下への懸念があります。</li>
+      <li><strong>全世代型社会保障改革</strong>：高齢者中心だった給付を子育て・現役世代にも拡充する「全世代型社会保障」への転換が進められていますが、財源をどう確保するかが議論の焦点です。</li>
+      <li><strong>財源の持続可能性</strong>：公费負担分の一部が国債発行で賄われており、給付を維持するほど将来世代への負担の先送りが拡大するとの指摘があります。</li>
     </ul>
   </section>
 
   <section id="board">
     <h2>掲示板</h2>
     <p class="section-note">
-      このサイトの内容や防衛費のあり方について、ご意見・ご感想をお寄せください（Disqusによる外部埋め込みです。GitHubアカウントは不要、匿名でも投稿できます）。
+      このサイトの内容や社会保障のあり方について、ご意見・ご感想をお寄せください（Disqusによる外部埋め込みです。GitHubアカウントは不要、匿名でも投稿できます）。
     </p>
     <div id="disqus_thread"></div>
     <p id="disqus-setup-notice" class="callout" hidden>
@@ -182,16 +188,16 @@
   <footer id="sources">
     <strong style="color:var(--text-secondary)">データソース</strong>
     <ul class="sources">
-      <li><a href="https://www.mof.go.jp/policy/budget/budger_workflow/budget/fy2026/seifuan2026/19.pdf" target="_blank" rel="noopener">財務省「令和8年度防衛関係予算のポイント」</a></li>
-      <li><a href="https://www.mof.go.jp/public_relations/finance/202605/202605g.html" target="_blank" rel="noopener">財務省広報誌 特集「令和8年度 防衛関係予算について」</a></li>
+      <li><a href="https://www.ipss.go.jp/ss-cost/j/data.asp" target="_blank" rel="noopener">国立社会保障・人口問題研究所（IPSS）「社会保障費用統計」</a></li>
+      <li><a href="https://www.mhlw.go.jp/" target="_blank" rel="noopener">厚生労働省（社会保障制度の概要・予算資料）</a></li>
       <li><a href="https://www.mof.go.jp/tax_policy/summary/condition/002.pdf" target="_blank" rel="noopener">財務省「日本の財政関係資料」（一般会計歳出内訳）</a></li>
-      <li><a href="https://www.mod.go.jp/j/budget/yosan_gaiyo/fy2026/yosan_20260408.pdf" target="_blank" rel="noopener">防衛省「令和8年度予算の概要」</a></li>
-      <li><a href="https://www.nikkei.com/article/DGXZQOUA170ZV0X10C26A4000000/" target="_blank" rel="noopener">日本経済新聞「26年度予算の防衛関連費、GDP比1.9%」</a></li>
+      <li><a href="https://www.stat.go.jp/data/jinsui/" target="_blank" rel="noopener">総務省統計局「人口推計」</a></li>
+      <li><a href="https://www8.cao.go.jp/kourei/whitepaper/index-w.html" target="_blank" rel="noopener">内閣府「高齢社会白書」</a></li>
     </ul>
     <div class="disclaimer">
-      本サイトは公開資料をもとに作成した参考情報であり、政府・特定の立場を代表するものではありません。
-      予算数値は当初予算（見込み）ベースであり、補正予算や執行実績により変動します。
-      年度間の比較では集計範囲が異なる場合があるため、正確な数値は各出典の一次資料をご確認ください。
+      本サイトは公開統計をもとに作成した参考情報であり、政府・特定の立場を代表するものではありません。
+      「社会保障給付費」は年度により集計方法の見直しが行われる場合があり、また「社会保障関係費」（国の一般会計予算項目）とは
+      集計範囲が異なります。正確な数値・定義は各出典の一次資料をご確認ください。
     </div>
   </footer>
 </div>
@@ -201,64 +207,62 @@
 <script src="assets/disqus.js"></script>
 <script>
 (function () {
-  const cards = document.querySelectorAll(".chart-card");
-
-  // 1. 防衛費推移
+  // 1. 給付費推移
   const trendCard = document.getElementById("trend").querySelector(".chart-card");
-  Charts.renderVerticalBar(trendCard, DATA.trend, {
+  Charts.renderVerticalBar(trendCard, DATA.benefitTrend, {
     valueKey: "oku",
     color: () => "var(--series-1)",
     axisFormat: (v) => Charts.fmtOku(v),
-    tooltip: (d) => `${Charts.fmtOku(d.oku)}（${d.oku.toLocaleString("ja-JP")}億円）<br>${d.note.startsWith("+") ? "前年度比 " + d.note : d.note}`,
+    tooltip: (d) => `${Charts.fmtOku(d.oku)}（${d.oku.toLocaleString("ja-JP")}億円）<br>${d.note}`,
     directLabel: (d) => (d.oku / 10000).toLocaleString("ja-JP", { maximumFractionDigits: 1 }) + "兆円",
   });
-  document.getElementById("trend-table").innerHTML = DATA.trend.map((d) =>
-    `<tr><td>${d.label.replace("\n", " ")}</td><td>${d.oku.toLocaleString("ja-JP")}</td><td>${d.note}</td></tr>`
+  document.getElementById("trend-table").innerHTML = DATA.benefitTrend.map((d) =>
+    `<tr><td>${d.label}年度</td><td>${d.oku.toLocaleString("ja-JP")}</td><td>${d.note || "-"}</td></tr>`
   ).join("");
   Charts.wireTableToggle(trendCard, trendCard.querySelector(".data-table"));
 
-  // 2. GDP比
-  const gdpCard = document.getElementById("gdp").querySelector(".chart-card");
-  Charts.renderVerticalBar(gdpCard, DATA.gdpRatio, {
-    valueKey: "pct",
-    color: (d) => (d.label.includes("目標") ? "var(--series-2)" : "var(--series-1)"),
-    axisFormat: (v) => v.toLocaleString("ja-JP") + "%",
-    tooltip: (d) => `${Charts.fmtPct(d.pct)}<br>${d.note}`,
-    directLabel: (d) => Charts.fmtPct(d.pct),
+  // 2. 給付費の内訳
+  const insideCard = document.getElementById("inside").querySelector(".chart-card");
+  Charts.renderHorizontalBar(insideCard, DATA.costBreakdown, {
+    valueKey: "oku",
+    color: (d, i) => ["var(--series-1)", "var(--series-2)", "var(--series-neutral)"][i] || "var(--series-neutral)",
+    tooltip: (d) => `${d.detail}<br>${Charts.fmtOku(d.oku)}（${d.oku.toLocaleString("ja-JP")}億円）・全体の${d.pct}%`,
+    directLabel: (d) => `${d.pct}%`,
+    labelWidth: 120,
   });
-  document.getElementById("gdp-table").innerHTML = DATA.gdpRatio.map((d) =>
-    `<tr><td>${d.label.replace("\n", " ")}</td><td>${d.pct}%</td><td>${d.note}</td></tr>`
+  document.getElementById("inside-table").innerHTML = DATA.costBreakdown.map((d) =>
+    `<tr><td>${d.label}（${d.detail}）</td><td>${d.oku.toLocaleString("ja-JP")}</td><td>${d.pct}%</td></tr>`
   ).join("");
-  Charts.wireTableToggle(gdpCard, gdpCard.querySelector(".data-table"));
+  Charts.wireTableToggle(insideCard, insideCard.querySelector(".data-table"));
 
-  // 3. 一般会計内訳
-  const breakdownCard = document.getElementById("breakdown").querySelector(".chart-card");
+  // 3. 一般会計内訳における位置づけ
+  const positionCard = document.getElementById("position").querySelector(".chart-card");
   const sortedBreakdown = [...DATA.budgetBreakdown].sort((a, b) => b.oku - a.oku);
-  Charts.renderHorizontalBar(breakdownCard, sortedBreakdown, {
+  Charts.renderHorizontalBar(positionCard, sortedBreakdown, {
     valueKey: "oku",
     color: (d) => (d.highlight ? "var(--series-1)" : "var(--series-neutral)"),
     tooltip: (d) => `${Charts.fmtOku(d.oku)}（${d.oku.toLocaleString("ja-JP")}億円）<br>全体の${d.pct}%`,
     directLabel: (d) => `${d.pct}%`,
     labelWidth: 190,
   });
-  document.getElementById("breakdown-table").innerHTML = sortedBreakdown.map((d) =>
+  document.getElementById("position-table").innerHTML = sortedBreakdown.map((d) =>
     `<tr><td>${d.label}</td><td>${d.oku.toLocaleString("ja-JP")}</td><td>${d.pct}%</td></tr>`
   ).join("");
-  Charts.wireTableToggle(breakdownCard, breakdownCard.querySelector(".data-table"));
+  Charts.wireTableToggle(positionCard, positionCard.querySelector(".data-table"));
 
-  // 4. 防衛費の中身
-  const insideCard = document.getElementById("inside").querySelector(".chart-card");
-  Charts.renderHorizontalBar(insideCard, DATA.costBreakdown, {
-    valueKey: "oku",
-    color: (d, i) => (i === 0 ? "var(--series-1)" : "var(--series-2)"),
-    tooltip: (d) => `${d.detail}<br>${Charts.fmtOku(d.oku)}（${d.oku.toLocaleString("ja-JP")}億円）・全体の${d.pct}%`,
-    directLabel: (d) => `${d.pct}%`,
-    labelWidth: 150,
+  // 4. 高齢化率の推移
+  const agingCard = document.getElementById("aging").querySelector(".chart-card");
+  Charts.renderVerticalBar(agingCard, DATA.agingRate, {
+    valueKey: "pct",
+    color: () => "var(--series-2)",
+    axisFormat: (v) => v.toLocaleString("ja-JP") + "%",
+    tooltip: (d) => `${Charts.fmtPct(d.pct)}${d.note ? "<br>" + d.note : ""}`,
+    directLabel: (d) => Charts.fmtPct(d.pct),
   });
-  document.getElementById("inside-table").innerHTML = DATA.costBreakdown.map((d) =>
-    `<tr><td>${d.label}（${d.detail}）</td><td>${d.oku.toLocaleString("ja-JP")}</td><td>${d.pct}%</td></tr>`
+  document.getElementById("aging-table").innerHTML = DATA.agingRate.map((d) =>
+    `<tr><td>${d.label}年</td><td>${d.pct}%</td><td>${d.note || "-"}</td></tr>`
   ).join("");
-  Charts.wireTableToggle(insideCard, insideCard.querySelector(".data-table"));
+  Charts.wireTableToggle(agingCard, agingCard.querySelector(".data-table"));
 })();
 </script>
 </body>

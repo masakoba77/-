@@ -9,9 +9,9 @@
   --grid: #e1e0d9;
   --baseline: #c3c2b7;
   --border: rgba(11, 11, 11, 0.10);
-  --series-1: #2a78d6;   /* blue: defense */
+  --series-1: #2a78d6;   /* blue: 社会保障・年金 */
   --series-1-wash: rgba(42, 120, 214, 0.10);
-  --series-2: #eb6834;   /* orange: 物件費 */
+  --series-2: #eb6834;   /* orange: 医療・高齢化率 */
   --series-neutral: #b9b8b1; /* other budget items */
   --series-neutral-text: #6f6e69;
   --good: #0ca30c;
