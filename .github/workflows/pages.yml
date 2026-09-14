@@ -3,7 +3,7 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches:
-      - claude/japan-defense-budget-site-9ep1l3
+      - claude/japan-social-security-site-387n50
   workflow_dispatch:
 
 permissions:
